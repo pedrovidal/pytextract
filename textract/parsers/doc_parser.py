@@ -2,9 +2,8 @@ from .utils import ShellParser
 
 
 class Parser(ShellParser):
-    """Extract text from doc files using antiword.
-    """
+    """Extract text from doc files using antiword."""
 
     def extract(self, filename, **kwargs):
-        stdout, stderr = self.run(['antiword', filename])
-        return stdout
+        stdout, stderr = self.run(["antiword", filename])
+        return stdout.split(b".txt using filter : Text\n")[1]
