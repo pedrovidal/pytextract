@@ -54,7 +54,7 @@ add support for hitherto unsupported file type `.abc123`:
   it like this:
 
   ```shell
-  textract tests/abc123/raw_text.abc123 > tests/abc123/raw_text.txt
+  pytextract tests/abc123/raw_text.abc123 > tests/abc123/raw_text.txt
   ```
 
   and add the basic test suite by creating

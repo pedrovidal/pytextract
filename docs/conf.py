@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 #
-# textract documentation build configuration file, created by
+# pytextract documentation build configuration file, created by
 # sphinx-quickstart on Fri Jul  4 11:09:09 2014.
 #
 # This file is execfile()d with the current directory set to its
@@ -20,7 +20,7 @@ import os
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 project_root = os.path.abspath(os.path.join(os.path.abspath('.'), '..'))
 sys.path.insert(0, project_root)
-import textract
+import pytextract
 
 # -- General configuration ------------------------------------------------
 
@@ -50,7 +50,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'textract'
+project = u'pytextract'
 copyright = u'2014, Dean Malmgren'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -201,7 +201,7 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  ('index', 'textract.tex', u'textract Documentation',
+  ('index', 'pytextract.tex', u'pytextract Documentation',
    u'Dean Malmgren', 'manual'),
 ]
 
@@ -231,7 +231,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'textract', u'textract Documentation',
+    ('index', 'pytextract', u'pytextract Documentation',
      [u'Dean Malmgren'], 1)
 ]
 
@@ -245,8 +245,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'textract', u'textract Documentation',
-   u'Dean Malmgren', 'textract', 'One line description of project.',
+  ('index', 'pytextract', u'pytextract Documentation',
+   u'Dean Malmgren', 'pytextract', 'One line description of project.',
    'Miscellaneous'),
 ]
 

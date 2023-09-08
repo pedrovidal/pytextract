@@ -13,7 +13,7 @@ cp tests/Dockerfile ./Dockerfile
 # change and the existing image is outdated, just delete it with:
 # docker rmi <image name>
 docker images | grep $image || docker build -t $image .
-docker run --rm -v $base:/home/textract/src $image
+docker run --rm -v $base:/home/pytextract/src $image
 
 rm ./Dockerfile
 

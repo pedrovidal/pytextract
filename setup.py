@@ -2,7 +2,7 @@ import glob
 import os
 from setuptools import setup
 
-import textract
+import pytextract
 
 # get all of the scripts
 scripts = glob.glob("bin/*")
@@ -41,7 +41,7 @@ dependencies, dependency_links = parse_requirements(requirements_filename)
 
 
 setup(
-    name=textract.__name__,
+    name=pytextract.__name__,
     version="1.6.5",
     description="extract text from any document. no muss. no fuss.",
     long_description=long_description,
@@ -52,8 +52,8 @@ setup(
     license='MIT',
     scripts=scripts,
     packages=[
-        'textract',
-        'textract.parsers',
+        'pytextract',
+        'pytextract.parsers',
     ],
     install_requires=dependencies,
     extras_require={
