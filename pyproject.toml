@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "textract"
-version = "2.0.0"
+version = "2.0.1"
 description = ""
 authors = ["pedrovidal <pedrovidal@escavador.com>"]
 readme = "README.md"
